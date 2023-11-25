@@ -15,14 +15,38 @@
 </head>
 
 <body>
+    <header>
+        <img class="logo" src="images/logo/Booki.png" alt="logo" />
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#">Hébergements</a></li>
+                <li><a class="nav-link" href="#">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="info-group">
+        <div class="info-group__header">
+            <h1 class="info-group__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="info-group__subtitle">En plein centre-ville ou en pleine nature</p>
+        </div>
+        <form class="searchbar">
+            <i class="fa-solid fa-location-dot fa-xl" id="info-group__searchbar-icon"></i>
+            <input class="searchbar__input" type="text" name="location" id="" placeholder="Marseille, France" />
+            <button class="searchbar__button" type="submit">Rechercher</button>
+        </form>
+        <div class="filters-list">
+            <p class="filters-list__title">Filtres</p>
+            <i class="fa-solid fa-money-bill-wave fa-lg"><p>Economique</p></i>
+            <i class="fa-solid fa-person fa-lg"><p>Famille</p></i>
+            <i class="fa-solid fa-heart fa-lg"><p>Romantique</p></i>
+            <i class="fa-solid fa-fire fa-lg"><p>Nos pépites</p></i>
+        </div>
+        <div class="info-group__footer">
+            <i class="fa-solid fa-info fa-xs"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </section>
     <div class="main-container">
-        <header>
-            <img class="logo" src="images/logo/Booki.png" alt="logo"/>
-            <nav>
-                <a class="nav-link nav-link--is-active" href="#">Hébergements</a>
-                <a class="nav-link" href="#">Activités</a>
-            </nav>
-        </header>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -36,7 +60,8 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/emile-guillemot.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -53,9 +78,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#hebergement">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/aw-creative.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -74,7 +100,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
