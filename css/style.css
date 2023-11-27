@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
 }
 
 :root {
@@ -16,47 +15,39 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     gap: 2em;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 79px 50px;
-    box-sizing: border-box;
+    margin: 0;
 }
 
 /*
 NAVBAR
 */
-
 header {
-    width: 93%;
-    height: 79px;
-    max-width: 1350px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    max-width: 1440px;
+    padding: 0 50px;
+    /* align-items: center; */
+    /* position: fixed;
+    /* top: 0; */
+    /* z-index: 300;  */
     background-color: white;
+    box-sizing: border-box;
 }
 
 .logo {
     height: 30%;
     width: auto;
     object-fit: contain;
+    align-self: center;
 }
 
 nav {
-    align-self: flex-start;
-    flex-direction: column;
-    justify-content: start;
+    align-self: start;
+    /* flex-direction: column; */
+    display: flex;
 }
 
 a {
@@ -83,23 +74,34 @@ ul {
     display: flex;
     height: 35px;
     gap: 5em;
+    margin: 0;
 }
 
 li {
+    /* align-self: start; */
     display: flex;
     align-items: end;
     list-style: none;
 }
-
 /*
 END-NAVBAR
 */
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 79px 50px;
+    box-sizing: border-box;
+}
+
 .info-group {
-    width: 93%;
-    max-width: 1350px;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
     display: flex;
+    box-sizing:  border-box;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2em;
 }
 
@@ -171,19 +173,25 @@ END-NAVBAR
     font-weight: 700;
 }
 
-.filters-list>i {
-    padding: 1em;
+.filter-item {
     display: flex;
+    align-items: center;
+    padding: 0 1em;
     gap: 10px;
     border: solid 2px var(--main-bg-color);
     border-radius: 25px;
+}
+
+.filter-item>i {
+
 }
 
 .filters-list>i:hover {
     background-color: var(--main-bg-color);
 }
 
-.filters-list>i>p {
+.filter-item>p {
+    margin: 10px 0;
     font-size: 17px;
     font-weight: 700;
     color: black;
