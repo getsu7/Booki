@@ -15,39 +15,25 @@
 }
 
 body {
-    gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
+    gap: 2em;
 }
 
-/*
-NAVBAR
-*/
 header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 79px;
     max-width: 1440px;
     padding: 0 50px;
-    /* align-items: center; */
-    /* position: fixed;
-    /* top: 0; */
-    /* z-index: 300;  */
     background-color: white;
     box-sizing: border-box;
-}
-
-.logo {
-    height: 30%;
-    width: auto;
-    object-fit: contain;
-    align-self: center;
-}
-
-nav {
-    align-self: start;
-    /* flex-direction: column; */
-    display: flex;
+    position: sticky;
+    top: 0;
 }
 
 a {
@@ -56,20 +42,31 @@ a {
     box-sizing: border-box;
 }
 
-a:hover {
-    color: var(--main-color)
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
 }
 
-li:hover {
-    border-top: solid 2px;
-    border-color: var(--main-color);
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.nav-link:active {
-    color: var(--main-color);
+.header__logo {
+    height: 30%;
+    width: auto;
+    object-fit: contain;
+    align-self: center;
 }
 
-ul {
+.header__nav {
+    align-self: start;
+    display: flex;
+}
+
+.header__nav-list {
     padding: 0;
     display: flex;
     height: 35px;
@@ -77,42 +74,51 @@ ul {
     margin: 0;
 }
 
-li {
-    /* align-self: start; */
+.header__nav-item {
     display: flex;
     align-items: end;
     list-style: none;
 }
-/*
-END-NAVBAR
-*/
+
+.header__nav-item:hover {
+    border-top: solid 2px;
+    border-color: var(--main-color);
+}
+
+.header__nav-link:active {
+    color: var(--main-color);
+}
+
+.header__nav-link:hover {
+    color: var(--main-color)
+}
 
 .main-container {
-    width: 100%;
+    width: 100vw;
     max-width: 1440px;
-    padding: 79px 50px;
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
 .info-group {
-    width: 100%;
+    width: 100vw;
     max-width: 1440px;
     padding: 0 50px;
     display: flex;
     box-sizing:  border-box;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 35px;
 }
 
-.info-group__title {
-    font-size: 22px;
-    font-weight: 700;
+.info-group__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .info-group__subtitle {
-    font-size: 16px;
-    font-weight: 400;
+    margin: 0;
 }
 
 .searchbar {
@@ -121,7 +127,7 @@ END-NAVBAR
     display: flex;
 }
 
-.searchbar>i {
+.searchbar__icon {
     background-color: var(--main-bg-color);
     color: black;
     border-radius: 0.5em 0 0 0.5em;
@@ -182,11 +188,7 @@ END-NAVBAR
     border-radius: 25px;
 }
 
-.filter-item>i {
-
-}
-
-.filters-list>i:hover {
+.filter-item:hover {
     background-color: var(--main-bg-color);
 }
 
@@ -214,7 +216,7 @@ END-NAVBAR
 }
 
 .info-group__footer>p {
-    font-size: 16;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -261,9 +263,58 @@ END-NAVBAR
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: auto;
+    gap: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-width: 60%;
 }
 
+.herbergement__first-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements__card {
+    width: calc(33% - 8px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px 4px 10px 4px;
+    background: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+
+.hebergements__card img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+}
+
+.hebergements__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.hebergements__card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hebergements__card-title {
+    margin: 0;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
