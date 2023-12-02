@@ -24,42 +24,46 @@
             </ul>
         </nav>
     </header>
-    <section class="info-group">
-        <div class="info-group__header">
-            <h2 class="info-group__title">Trouvez votre hébergement pour des vacances de rêve</h2>
-            <!-- h6 -->
-            <p class="info-group__subtitle">En plein centre-ville ou en pleine nature</p>
-        </div>
-        <form class="searchbar">
-            <i class="searchbar__icon fa-solid fa-location-dot fa-xl"></i>
-            <label for="location"></label>
-            <input class="searchbar__input" id="location" name="location" type="text" placeholder="Marseille, France" />
-            <button class="searchbar__button" type="submit">Rechercher</button>
-        </form>
-        <div class="filters-list">
-            <p class="filters-list__title">Filtres</p>
-            <span class="filter-item">
-                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                <p>Economique</p>
-            </span>
-            <span class="filter-item">
-                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                <p>Famille</p>
-            </span><span class="filter-item">
-                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                <p>Romantique</p>
-            </span><span class="filter-item">
-                <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                <p>Nos pépites</p>
-            </span>
-        </div>
-        <div class="info-group__footer">
-            <i class="fa-solid fa-info fa-xs"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
-    <div class="main-container">
-        <main>
+    <main>
+
+        <section class="info-group">
+            <div class="info-group__header">
+                <h2 class="info-group__title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h6 class="subtitle">En plein centre-ville ou en pleine nature</h6>
+            </div>
+            <form class="searchbar">
+                <i class="searchbar__icon fa-solid fa-location-dot fa-xl"></i>
+                <label for="location"></label>
+                <input class="searchbar__input" id="location" name="location" type="text"
+                    placeholder="Marseille, France" />
+                <button class="searchbar__button" type="submit">Rechercher</button>
+            </form>
+
+            <div class="filters-list">
+                <p class="filters-list__title">Filtres</p>
+                <span class="filter-item">
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                    <p>Economique</p>
+                </span>
+                <span class="filter-item">
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                    <p>Famille</p>
+                </span><span class="filter-item">
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                    <p>Romantique</p>
+                </span><span class="filter-item">
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                    <p>Nos pépites</p>
+                </span>
+            </div>
+            
+            <div class="info-group__footer">
+                <i class="fa-solid fa-info fa-xs"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <!-- échanger l'ordre avec main et main-container -->
+        <div class="main-container">
             <div class="lodging-and-popular">
                 <section id="lodging">
                     <h2 class="lodging__title">Hébergements à Marseille</h2>
@@ -208,7 +212,8 @@
                             </a>
                         </article>
                     </div>
-                    <span class="show-more">Afficher plus</span>
+
+                    <a href="#"><span class="show-more">Afficher plus</span></a>
                 </section>
                 <section class="popular">
                     <div class="popular-title">
@@ -320,16 +325,14 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
         <footer>
             <div class="footer__wrapper">
                 <h4 class="footer_title">A propos</h4>
                 <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__about-link">Fonctionnement du site</a>
-                    </li>
+                    <li class="footer__item"><a href="#" class="footer__about-link">Fonctionnement du site</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Conditions générales</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Données et confidencialité</a>
-                    </li>
+                    <li class="footer__item"><a href="#" class="footer__link">Données et confidencialité</a></li>
                 </ul>
             </div>
             <div class="footer__wrapper">
@@ -348,7 +351,7 @@
                 </ul>
             </div>
         </footer>
-    </div>
+    </main>
 </body>
 
 </html>
