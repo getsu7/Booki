@@ -404,7 +404,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0;
-    gap: 30px;
+    gap: 35px;
 }
 
 header {
@@ -483,7 +483,6 @@ main {
     display: flex;
     box-sizing:  border-box;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 35px;
 }
 
@@ -541,7 +540,7 @@ main {
     background-color: var(--button-hover);
 }
 
-.filters-list {
+.filter-list {
     display: flex;
     width: auto;
     height: 50px;
@@ -550,9 +549,15 @@ main {
     flex-wrap: wrap;
 }
 
-.filters-list__title {
+.filter-list__title {
     font-size: 18px;
     font-weight: 700;
+}
+
+.filter-item__wrapper {
+  display: flex;
+  gap: 15px;
+  height: 100%;
 }
 
 .filter-item {
@@ -759,10 +764,6 @@ main {
   border-radius: 7%;
 }
 
-.activity__card-title {
-
-}
-
 .activity__card-wrapper {
   display: flex;
   gap: 2em;
@@ -798,7 +799,7 @@ footer {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 1em;
 }
 
@@ -836,7 +837,6 @@ footer {
 
     .popular-cards {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -851,15 +851,80 @@ footer {
     .popular-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activity__card-wrapper {
+      gap: 1em;
+    }
+
+    .activity__card-text {
+      padding: 20px;
+    }
+
+    .activity__card-image {
+      height: 200px;
+    }
+
+    .card-content {
+      gap: 24px;
+    }
+
+    .filter-list {
+      height: 100%;
+    }
+    
+    .filter-item p {
+      font-size: 16px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* .filters-list {
-      flex-wrap: wrap-reverse;
+
+    main {
+      padding: 0;
     }
 
-    .filters-list:last-child {
-      order: ;
-    } */
+    header {
+      height: 100%;
+      flex-direction: column;
+
+    }
+
+    .header__logo {
+      height: 19px;
+      padding: 30px;
+    }
+
+    .header__nav-item {
+      align-items: flex-start;
+    }
+
+    .header__nav {
+      align-self: center;
+    }
+
+    .header__nav-item:hover {
+      border-bottom: solid 2px;
+      border-top: 0;
+      border-color: var(--main-color);
+    }
+
+    .info-group {
+
+      padding: 0 20px 0 20px;
+    }
+
+    .info-group__header {
+    }
+
+    .info-group__title {
+
+    }
+
+    .searchbar__button {
+      display: none;
+    }
+
+    
+
   }
