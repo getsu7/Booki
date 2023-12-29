@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -37,25 +38,36 @@
                 <input class="searchbar__input" id="location" name="location" type="text"
                     placeholder="Marseille, France" />
                 <button class="searchbar__button" type="submit">Rechercher</button>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </form>
 
             <div class="filter-list">
                 <p class="filter-list__title">Filtres</p>
                 <div class="filter-item__wrapper">
-                    <span class="filter-item">
-                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                        <p>Economique</p>
-                    </span>
-                    <span class="filter-item">
-                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                        <p>Familial</p>
-                    </span><span class="filter-item">
-                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                        <p>Romantique</p>
-                    </span><span class="filter-item">
-                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                        <p>Nos pépites</p>
-                    </span>
+                    <div class="filter-item__container">
+                        <span class="filter-item">
+                            <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                            Économique
+                        </span>
+                    </div>
+                    <div class="filter-item__container">
+                        <span class="filter-item">
+                            <i class="fa-solid fa-person fa-lg"></i>
+                            Familial
+                        </span>
+                    </div>
+                    <div class="filter-item__container">
+                        <span class="filter-item">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                            Romantique
+                        </span>
+                    </div>
+                    <div class="filter-item__container">
+                        <span class="filter-item">
+                            <i class="fa-solid fa-fire fa-lg"></i>
+                            Nos pépites
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -64,10 +76,9 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <!-- échanger l'ordre avec main et main-container -->
         <div class="main-container">
             <div class="lodging-and-popular">
-                <section id="lodging">
+                <section class="lodging" id="lodging">
                     <h2 class="lodging__title">Hébergements à Marseille</h2>
                     <div class="lodging__row">
 
@@ -330,7 +341,7 @@
         </div>
         <footer>
             <div class="footer__wrapper">
-                <h4 class="footer_title">A propos</h4>
+                <h4 class="footer__title">À propos</h4>
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#" class="footer__about-link">Fonctionnement du site</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Conditions générales</a></li>
@@ -338,7 +349,7 @@
                 </ul>
             </div>
             <div class="footer__wrapper">
-                <h4 class="footer_title">Nos hébergements</h4>
+                <h4 class="footer__title">Nos hébergements</h4>
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#" class="footer_link">Charte qualité</a></li>
                     <li class="footer__item"><a href="#" class="footer_link">Proposer votre hôtel</a>
@@ -346,7 +357,7 @@
                 </ul>
             </div>
             <div class="footer__wrapper">
-                <h4 class="footer_title">Assistance</h4>
+                <h4 class="footer__title">Assistance</h4>
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#" class="footer__link">Centre d'aide</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Nous contacter</a></li>
